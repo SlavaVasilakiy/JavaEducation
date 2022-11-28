@@ -1,3 +1,4 @@
+package practice;
 //Даны числа x, y и n.
 //
 //Выведите
