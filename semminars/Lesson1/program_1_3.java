@@ -1,4 +1,4 @@
-package lesson1;
+package semminars.Lesson1;
 
 public class program_1_3 {
     public static void main(String[] args) {

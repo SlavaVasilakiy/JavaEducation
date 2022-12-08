@@ -12,7 +12,12 @@
  Пример 2: а = 11, b = 7, c = 2, d = 1
  ответ: нет решения. */
 
-package lesson1;
+
+//f(x) =
+//x-c, x%d == 1
+//x-c + x/d, x%d==0
+
+package semminars.Lesson1;
 
 public class program_1_1 {
     public static void main(String[] args) {

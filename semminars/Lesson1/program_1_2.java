@@ -1,4 +1,4 @@
-package lesson1;
+package semminars.Lesson1;
 
 import java.util.Scanner;
 
