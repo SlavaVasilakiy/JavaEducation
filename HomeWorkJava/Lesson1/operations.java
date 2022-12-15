@@ -1,4 +1,4 @@
-package HomeWorkJava.Lesson1;
+package Lesson1;
 
 public class operations {
     public static String Exponentiation (double numFirst, int numSecond)

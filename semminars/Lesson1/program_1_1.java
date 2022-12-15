@@ -1,3 +1,4 @@
+package Lesson1;
 /* На вход некоторому исполнителю
  подаётся два числа (a, b).
  У исполнителя есть две команды
@@ -17,7 +18,6 @@
 //x-c, x%d == 1
 //x-c + x/d, x%d==0
 
-package semminars.Lesson1;
 
 public class program_1_1 {
     public static void main(String[] args) {

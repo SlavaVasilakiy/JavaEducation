@@ -24,3 +24,8 @@ hs_err_pid*
 /out/
 /JavaEducation.iml
 /.idea/
+/log.txt
+/test.bin
+/file.txt
+/log.xml
+/Lectures/lectures.iml

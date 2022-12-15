@@ -1,4 +1,4 @@
-package lesson2;
+package Lesson2;
 import java.util.Random;
 
 /**
@@ -57,7 +57,7 @@ class Library {
    * 
    * @param numbers массив, который нужно распечатать
    * @return Возвращает строку,
-   *         содержащую элементы массива {@link numbers}
+   *         содержащую элементы массива {@params numbers}
    */
   public static String printGood(int[] numbers) {
     int size = numbers.length;

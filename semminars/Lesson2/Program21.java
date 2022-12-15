@@ -3,9 +3,8 @@
 // Найдите сумму отрицательных и положительных
 // элементов массива.
 
-package lesson2;
+package Lesson2;
 
-import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Program21 {

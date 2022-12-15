@@ -1,4 +1,4 @@
-package HomeWorkJava.Lesson1;
+package Lesson1;
 
 public class program {
     public static void main(String[] args) throws Exception {
