@@ -1,4 +1,4 @@
-package Seminars_Kotov;
+
 class OutputPrint {
     public void outputPrint() {
         int[] nums = new int[]{1, 2, 0, 0, 12};

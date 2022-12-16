@@ -1,4 +1,4 @@
-package Seminars_Kotov;
+
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Seminars_Kotov;
+
 class SolutionRemoveElement {
     public int removeElement(int[] nums, int val) {
         int n = nums.length;

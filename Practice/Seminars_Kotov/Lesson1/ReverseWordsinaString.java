@@ -1,4 +1,4 @@
-package Seminars_Kotov;
+
 /*
 Reverse Words in a String
  */
