@@ -1,4 +1,4 @@
-package Seminars.Lesson1;
+package Lesson1;
 
 public class Program1 {
     public static void main(String[] args) {
@@ -6,6 +6,6 @@ public class Program1 {
         int[] result = new int[a.length - 2];
         CheckInt check = new CheckInt();
         check.CheckInt(a, result);
-        }
     }
+}
 

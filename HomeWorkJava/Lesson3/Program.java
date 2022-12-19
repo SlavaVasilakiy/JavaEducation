@@ -64,15 +64,17 @@ public class Program {
      * Input data
      */
     public static void getArg() {  // Turn each number to arguments to use in code
-        int startNumber = getNumber("Start Number");
+        int startNumber = getNumber("HanoiTower.Start Number");
         int endNumber = getNumber("End Number");
         int multNumber = getNumber("Mult Number");
         int sumNumber = getNumber("Sum Number");
+
         System.out.println("Let's see your numbers:");
-        System.out.printf("Start Number Number:%d, End Number:%d," +
+        System.out.printf("HanoiTower.Start Number Number:%d, End Number:%d," +
                         " Mult Number:(%d), Sum Number:(%d)\n",
                 startNumber, endNumber, multNumber
                 , sumNumber);
+
         exception(startNumber, endNumber, multNumber, sumNumber);
     }
 
