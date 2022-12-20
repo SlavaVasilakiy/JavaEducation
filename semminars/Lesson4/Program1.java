@@ -1,10 +1,8 @@
-package semminars.Lesson4;
-
 import java.util.Arrays;
 
 public class Program1 {
     public static void main(String[] args) {
-        int[] a = { 1, 9, 9, 0, 2, 8, 0, 9 };
+        int[] a = {1, 9, 9, 0, 2, 8, 0, 9};
         int max = Arrays.stream(a).max().getAsInt();
 
         System.out.println(max);

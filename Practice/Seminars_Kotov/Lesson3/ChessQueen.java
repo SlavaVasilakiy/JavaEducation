@@ -4,7 +4,8 @@ import java.util.List;
 public class ChessQueen {
     public static void main(String[] args) {
         FerthStart start = new FerthStart();
-        start.solveNQueens(4);
+        List result = start.solveNQueens(4);
+        System.out.println(result);
     }
 }
 

@@ -1,8 +1,13 @@
 package Lesson6;
+/*
+Изучить код из файла
 
+Добавить метод(ы) в class Infrastructure позволяющий осуществлять поиск по части имени фильма
+
+Пример вызовы ArrayList<String> result = infrastructure.findAll("особ");
+ */
 
 import java.util.ArrayList;
-
 
 
 public class App {
@@ -111,3 +116,6 @@ class FilmProducerFactory {
         return fp;
     }
 }
+
+
+
