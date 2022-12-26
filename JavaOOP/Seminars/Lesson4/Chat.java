@@ -1,7 +1,5 @@
-
-
-public class Test27 {
+public class Chat {
     public static void main(String[] args) {
-        
+
     }
 }
