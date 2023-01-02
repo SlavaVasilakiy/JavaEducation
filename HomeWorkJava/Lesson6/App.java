@@ -30,7 +30,7 @@ class Infrastructure {
     init();
   }
 
-  Db db;
+  Db2 db2;
 
   /**
    * готовая база данных
@@ -48,13 +48,13 @@ class Infrastructure {
    *         таблицам)
    */
   public String getAllInfo(int idCinema) {
-    Cinema c = db.films.get(idCinema - 1);
+    Cinema c = db2.films.get(idCinema - 1);
 
     return String.format("%d %s %s %s",
         c.id,
         c.name,
-        db.genres.get(c.genre - 1).name,
-        db.prod.get(c.filmProd - 1).titleName);
+        db2.genres.get(c.genre - 1).name,
+        db2.prod.get(c.filmProd - 1).titleName);
   }
 
   /**
@@ -64,15 +64,15 @@ class Infrastructure {
    */
   public ArrayList<String> findAll(String searchData) {
     ArrayList<String> findAll = new ArrayList<>();
-    int size = db.films.size();
+    int size = db2.films.size();
     for (int idCinema = 0; idCinema < size; idCinema++) {
-      Cinema c = db.films.get(idCinema);
+      Cinema c = db2.films.get(idCinema);
       if (c.name.toLowerCase().contains(searchData)) {
         findAll.add(String.format("%d %s %s %s",
             c.id,
             c.name,
-            db.genres.get(c.genre-1).name,
-            db.prod.get(c.filmProd-1).titleName));
+            db2.genres.get(c.genre-1).name,
+            db2.prod.get(c.filmProd-1).titleName));
       }
     }
     if (findAll.size() == 0) {
@@ -99,28 +99,28 @@ class Infrastructure {
    * компаний
    * @return база данных
    */
-  Db init() {
-    db = new Db();
+  Db2 init() {
+    db2 = new Db2();
     Cinema c1 = new Cinema(1, "Тьма", 1, 1);
     Cinema c2 = new Cinema(2, "Свет", 1, 2);
     Cinema c3 = new Cinema(3, "Особенности национальной рыбалки", 2, 2);
     Cinema c4 = new Cinema(4, "Человек паук", 3, 3);
 
-    db.films.add(c1);
-    db.films.add(c2);
-    db.films.add(c3);
-    db.films.add(c4);
+    db2.films.add(c1);
+    db2.films.add(c2);
+    db2.films.add(c3);
+    db2.films.add(c4);
 
-    db.genres.add(new Genre(1, "Ужасы"));
-    db.genres.add(new Genre(2, "Комедия"));
-    db.genres.add(new Genre(3, "Боевик"));
+    db2.genres.add(new Genre(1, "Ужасы"));
+    db2.genres.add(new Genre(2, "Комедия"));
+    db2.genres.add(new Genre(3, "Боевик"));
     FilmProducerFactory pf = new FilmProducerFactory();
-    db.addFilmProducer(pf.getFilmProducer("Ленфильм"));
-    db.addFilmProducer(pf.getFilmProducer("Мосфильм"));
-    db.addFilmProducer(pf.getFilmProducer("Марвел"));
-    db.addFilmProducer(pf.getFilmProducer("DC"));
+    db2.addFilmProducer(pf.getFilmProducer("Ленфильм"));
+    db2.addFilmProducer(pf.getFilmProducer("Мосфильм"));
+    db2.addFilmProducer(pf.getFilmProducer("Марвел"));
+    db2.addFilmProducer(pf.getFilmProducer("DC"));
 
-    return db;
+    return db2;
   }
 }
 

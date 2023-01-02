@@ -56,7 +56,7 @@ abstract class Model {
     abstract void appendRawData(String t);
 }
 
-class StringFormat extends Model {
+class StringFormat extends ModelApp {
 
     String text = "";
 
@@ -73,16 +73,16 @@ class StringFormat extends Model {
 }
 
 class Word {
-    Model model;
+    ModelApp modelApp;
 
-    public void setModel(Model model) {
-        this.model = model;
+    public void setModel(ModelApp modelApp) {
+        this.modelApp = modelApp;
     }
 
     TitleFormat format;
 
     public void appendData(String text) {
-        model.appendRawData(text);
+        modelApp.appendRawData(text);
     }
 
     public void setFormat(TitleFormat f) {
@@ -90,7 +90,7 @@ class Word {
     }
 
     void click() {
-        format.print(model.getRawData());
+        format.print(modelApp.getRawData());
     }
 }
 

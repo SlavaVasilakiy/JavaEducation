@@ -5,7 +5,7 @@ public class ChessQueen {
     public static void main(String[] args) {
         FerthStart start = new FerthStart();
         List result = start.solveNQueens(4);
-        System.out.println(result);
+//        start.printBoard(result);
     }
 }
 
@@ -54,7 +54,14 @@ class FerthStart {
         }
         return true;
     }
-
+    public void printBoard(List<List<String >> boards) {
+        for (int i = 0; i < boards.size(); i++) {
+            for (int j = 0; j < boards.get(i).size(); j++) {
+                System.out.print(boards.get(i).get(j));
+            }
+            System.out.println();
+        }
+    }
 
     private void addBoard() {
         List<String> b = new ArrayList<>();
@@ -67,6 +74,7 @@ class FerthStart {
             }
             b.add(sb.toString());
         }
+        System.out.println(b);
         ans.add(b);
     }
 }
