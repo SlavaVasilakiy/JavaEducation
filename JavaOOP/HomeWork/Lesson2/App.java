@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 /**
  *
- * @author Roope
+ * @author Vasilakii Vyacheslav
  */
-public class DSTR_LINKEDLIST {
+public class App {
 
     public static void main(String[] args) {
         FamilyTree familyTree = new FamilyTree();

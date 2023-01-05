@@ -1,9 +1,8 @@
-
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+// заполнение семейного дерева
 public class FamilyTreeBuilder {
 
     private final Scanner scanner;

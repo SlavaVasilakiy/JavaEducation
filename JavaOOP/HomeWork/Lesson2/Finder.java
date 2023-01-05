@@ -9,7 +9,7 @@ public class Finder {
     public Finder(FamilyTree familyTree) {
         this.familyTree = familyTree;
     }
-
+    // поиск родителей
     public void findParents(String name) {
         if (isMember(name)) {
             if (familyTree.getParents(name).isEmpty()) {
@@ -20,7 +20,7 @@ public class Finder {
             }
         }
     }
-
+    // поиск детей
     public void findChildren(String name) {
         try {
             if (familyTree.getMember(name).getChildren().isEmpty()) {
@@ -33,7 +33,7 @@ public class Finder {
             System.out.println(name + " не является членом генеалогического древа");
         }
     }
-
+    // поиск брата или сестры
     public void areSiblings(String firstName, String secondName) {
         if (isMember(firstName) && isMember(secondName)) {
             if (familyTree.getParents(firstName).equals(familyTree.getParents(secondName))) {
@@ -47,7 +47,7 @@ public class Finder {
             }
         }
     }
-
+    // проверка родства
     public void findAncestors(String name) {
         if (isMember(name)) {
             ArrayList<Member> ancestors = familyTree.getParents(name);
@@ -65,11 +65,11 @@ public class Finder {
             ancestors.stream().forEach(ancestor -> System.out.println("-" + ancestor.getName()));
         }
     }
-
+    // показать всех членов генеалогического древа
     public void showAllMembers() {
         familyTree.getFamilyTree().stream().forEach(member -> System.out.println("-" + member.getName()));
     }
-
+    // проверка на правильность ввода
     private boolean isMember(String name) {
         if (!familyTree.getFamilyTree().contains(familyTree.getMember(name))) {
             System.out.println(name + " не член генеалогического древа");
