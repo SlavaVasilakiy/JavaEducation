@@ -18,9 +18,7 @@ public class App {
         
         Finder finder = new Finder(familyTree);
         
-        TextBasedUserInterface textBasedUserInterface = new TextBasedUserInterface(
-                scanner, functionalities,
-                familyTreeBuilder, finder);
+        TextBasedUserInterface textBasedUserInterface = new TextBasedUserInterface(scanner, functionalities, familyTreeBuilder, finder);
         textBasedUserInterface.start();
 
 
