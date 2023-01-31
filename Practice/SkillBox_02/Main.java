@@ -7,16 +7,31 @@ import java.util.stream.Stream;
 
 public class Main
 {
-    private static String staffFile = "D:\\GeekBrains\\Coding_language_education_java\\JavaEducation\\JavaEducation\\src\\Practice\\SkillBox_02\\data\\staff.txt";
+    private static String staffFile = "D:\\GeekBrains\\Coding_language_education_java" +
+            "\\JavaEducation\\JavaEducation\\src\\Practice\\SkillBox_02\\data\\staff.txt";
     private static String dateFormat = "dd.MM.yyyy";
 
     public static void main(String[] args) {
         ArrayList<Employee> staff = loadStaffFromFile();
 
-        staff.stream().map(e -> e.getSalary())
-                .filter(s -> s >= 99999)
-                .reduce((s1, s2) -> s1 + s2)
-                .ifPresent(System.out::println);
+
+
+
+
+//        LRUCache<Employee> cache = new LRUCache<>(5);
+//
+//        for(Employee employee : staff) {
+//            cache.addElement(employee);
+//        }
+//
+//        System.out.println(cache.getElement(4).getSalary());
+//
+//        cache.getAllElements().forEach(System.out::println);
+
+//        staff.stream().map(e -> e.getSalary())
+//                .filter(s -> s >= 99999)
+//                .reduce((s1, s2) -> s1 + s2)
+//                .ifPresent(System.out::println);
 
 //        Stream<Employee> stream = staff.stream();
 //        stream.filter(employee -> employee.getSalary() >= 99999).forEach(System.out::println);

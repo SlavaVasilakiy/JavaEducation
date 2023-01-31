@@ -14,7 +14,8 @@ class Infrastructure {
     public String getAllInfo(int idStaff) {
         Staff staff = db.staff.get(idStaff - 1);
 
-        return String.format("id: %s, First Name: %s, Last Name: %s, Phone Number: %s, Adress: %s, Experience: %s",
+        return String.format("id: %s, First Name: %s, Last Name: %s, Phone Number: %s," +
+                        " Adress: %s, Experience: %s",
                 staff.id,
                 staff.firstName,
                 staff.lastName,
@@ -44,11 +45,16 @@ class Infrastructure {
 
     Db init() {
         db = new Db();
-        Staff staff1 = new Staff(1, "Ivan", "Kovalev", "+79263521243", "Novo-Sadovaya 17", "5 years");
-        Staff staff2 = new Staff(2, "Mihail", "Denisov", "+79811240952", "Samarskaya 9", "3 years");
-        Staff staff3 = new Staff(3, "Denis", "Romanov", "+79120345693", "Leninskaya 12", "10 years");
-        Staff staff4 = new Staff(4, "Konstantin", "Polev", "+79213531305", "Michurina 90", "8 years");
-        Staff staff5 = new Staff(5, "Irina", "Matveenko", "+79211235123", "Gagarina 7", "7 years");
+        Staff staff1 = new Staff(1, "Ivan", "Kovalev",
+                "+79263521243", "Novo-Sadovaya 17", "5 years");
+        Staff staff2 = new Staff(2, "Mihail", "Denisov",
+                "+79811240952", "Samarskaya 9", "3 years");
+        Staff staff3 = new Staff(3, "Denis", "Romanov",
+                "+79120345693", "Leninskaya 12", "10 years");
+        Staff staff4 = new Staff(4, "Konstantin", "Polev",
+                "+79213531305", "Michurina 90", "8 years");
+        Staff staff5 = new Staff(5, "Irina", "Matveenko",
+                "+79211235123", "Gagarina 7", "7 years");
 
         db.staff.add(staff1);
         db.staff.add(staff2);
