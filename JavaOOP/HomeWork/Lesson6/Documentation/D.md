@@ -32,7 +32,7 @@ public class MySQL {
 }
 ```
 
-_Classes **WebFramework**, **MySQL** имеют прямую зависимость от класса **ModelForm**._
+_Classes **WebFramework**, **MySQL** are directly dependent on the class **ModelForm**._
 
 <br>
 <br>
